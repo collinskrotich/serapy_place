@@ -17,6 +17,6 @@ export const navData = [
     {
         id: 4,
         title: 'join our team',
-        link: '/join'
+        link: '/team'
     },
 ];

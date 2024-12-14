@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import CTAButton from "./CTAButton";
+import BookSessionModal from "@/app/Modals/BookSessionModal";
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -61,11 +62,13 @@ const Navbar = () => {
                 })}
             </div>
 
-            {/* Sign up button */}
-            <CTAButton
+            {/* book session button */}
+            {/* <CTAButton
                 href={"/"}
                 text={"book a session"}
-            />
+            /> */}
+
+            <BookSessionModal />
         </section>
     );
 };
