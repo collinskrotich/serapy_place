@@ -17,7 +17,7 @@ export default {
 				textColor: '#333333',
 				accent1: '#EFB8C8',
 				accent2: '#87CEEB',
-				ctaButtons: '#FFD700',			
+				ctaButtons: '#10b981',			
 			
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

@@ -1,7 +1,7 @@
 "use client";
 
+import CTAButton from "@/app/components/navbar/CTAButton";
 import Image from "next/image";
-import Link from "next/link";
 
 const Services = () => {
     const services = [
@@ -41,7 +41,7 @@ const Services = () => {
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2"
+                        className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2 cursor-pointer"
                     >
                         {/* Service Image */}
                         <div className="w-full h-56 relative mb-6 rounded-lg overflow-hidden">
@@ -67,13 +67,11 @@ const Services = () => {
             </div>
 
             {/* View All Services Link */}
-            <div className="mt-12 text-center">
-                <Link
+            <div className="mt-12 flex items-center justify-center">
+                <CTAButton
+                    text="View All Services"
                     href="/services"
-                    className="inline-block bg-emerald-500 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-emerald-600 transition-colors"
-                >
-                    View All Services
-                </Link>
+                />
             </div>
         </section>
     );
