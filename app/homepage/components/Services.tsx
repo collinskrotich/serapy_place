@@ -1,0 +1,82 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+const Services = () => {
+    const services = [
+        {
+            title: "Telehealth Sessions",
+            description:
+                "Our telehealth services make it easier for you to maintain consistency in therapy, regardless of your schedule or location.",
+            image: "/images/telehealth.png", // Replace with your actual image paths
+        },
+        {
+            title: "Individual Psychotherapy",
+            description:
+                "Our core mission is to offer individualized psychotherapy sessions that cater to the unique needs of each client.",
+            image: "/images/psychology.png", // Replace with your actual image paths
+        },
+        {
+            title: "Group Sessions",
+            description:
+                "Group therapy can be an effective way to address specific issues, while also building a sense of community and belonging.",
+            image: "/images/grouptherapy.png", // Replace with your actual image paths
+        },
+    ];
+
+    return (
+        <section className="py-12 px-4 md:px-8 lg:px-16 bg-gray-50">
+            <div className="max-w-7xl mx-auto text-center">
+                {/* Section Heading */}
+                <h2 className="text-4xl font-extrabold text-gray-800 lg:text-5xl">
+                    Explore Our Services
+                </h2>
+                <p className="mt-4 text-lg text-gray-600 lg:text-xl max-w-2xl mx-auto">
+                    Whether you&apos;re looking for individual therapy, group support, or the flexibility of telehealth, we have options designed to meet your unique needs.
+                </p>
+            </div>
+
+            <div className="mt-12 grid gap-8 md:grid-cols-3">
+                {services.map((service, index) => (
+                    <div
+                        key={index}
+                        className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2"
+                    >
+                        {/* Service Image */}
+                        <div className="w-full h-56 relative mb-6 rounded-lg overflow-hidden">
+                            <Image
+                                src={service.image}
+                                alt={`${service.title} image`}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                        </div>
+
+                        {/* Service Title */}
+                        <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-emerald-500 transition-colors">
+                            {service.title}
+                        </h3>
+
+                        {/* Service Description */}
+                        <p className="mt-4 text-gray-600 leading-relaxed">
+                            {service.description}
+                        </p>
+                    </div>
+                ))}
+            </div>
+
+            {/* View All Services Link */}
+            <div className="mt-12 text-center">
+                <Link
+                    href="/services"
+                    className="inline-block bg-emerald-500 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-emerald-600 transition-colors"
+                >
+                    View All Services
+                </Link>
+            </div>
+        </section>
+    );
+};
+
+export default Services;
