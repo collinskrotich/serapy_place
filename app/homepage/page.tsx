@@ -1,5 +1,6 @@
 import Health from "./components/Health"
 import Hero from "./components/Hero"
+import Prepositions from "./components/Prepositions"
 import Services from "./components/Services"
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
         <Hero />
         <Health />
         <Services />
+        <Prepositions />
     </div>
   )
 }
