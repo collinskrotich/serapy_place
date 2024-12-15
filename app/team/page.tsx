@@ -8,25 +8,25 @@ const teamMembers = [
         name: "Dr. Emily Carter",
         role: "Clinical Psychologist",
         bio: "Dr. Carter specializes in cognitive-behavioral therapy and has over 10 years of experience helping clients overcome anxiety and depression.",
-        image: "/images/dr-emily-carter.jpg", // Replace with actual image paths
+        image: "/images/dr-emily-carter.jpg", 
     },
     {
         name: "Mr. James O'Neill",
         role: "Licensed Psychotherapist",
         bio: "James is passionate about guiding individuals through trauma recovery and fostering personal growth.",
-        image: "/images/james-oneill.jpg", // Replace with actual image paths
+        image: "/images/james-oneill.jpg", 
     },
     {
         name: "Ms. Sophia Harris",
         role: "Family Therapist",
         bio: "Sophia works closely with families to improve communication and build stronger, healthier relationships.",
-        image: "/images/sophia-harris.jpg", // Replace with actual image paths
+        image: "/images/sophia-harris.jpg", 
     },
     {
         name: "Dr. Rachel Nguyen",
         role: "Child and Adolescent Therapist",
         bio: "Rachel is dedicated to helping children and teens navigate life’s challenges with compassion and care.",
-        image: "/images/rachel-nguyen.jpg", // Replace with actual image paths
+        image: "/images/rachel-nguyen.jpg", 
     },
 ];
 
@@ -44,9 +44,9 @@ const OurTeam = () => {
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
-                    {teamMembers.map((member, index) => (
+                    {teamMembers.map((member) => (
                         <div
-                            key={index}
+                            key={member.name}
                             className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
                         >
                             <Image
