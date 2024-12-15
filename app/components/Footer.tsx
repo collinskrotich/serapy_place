@@ -111,7 +111,7 @@ const Footer = () => {
                 <div className="mt-6 flex flex-col lg:flex-row items-center justify-between text-sm">
                     <p className="text-gray-400">&copy; {new Date().getFullYear()} Serapy Place. All rights reserved.</p>
                     <p className="mt-4 lg:mt-0">
-                        Designed with <span className="text-emerald-400">&hearts;</span> by Serapy Place Team
+                        Designed with <span className="text-emerald-400">&hearts;</span> by CraftDuka Digital
                     </p>
                 </div>
             </div>

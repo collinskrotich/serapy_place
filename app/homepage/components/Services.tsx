@@ -44,12 +44,12 @@ const Services = () => {
                         className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2 cursor-pointer"
                     >
                         {/* Service Image */}
-                        <div className="w-full h-56 relative mb-6 rounded-lg overflow-hidden">
+                        <div className="w-full h-72 relative mb-4 rounded-lg overflow-hidden">
                             <Image
                                 src={service.image}
                                 alt={`${service.title} image`}
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
 

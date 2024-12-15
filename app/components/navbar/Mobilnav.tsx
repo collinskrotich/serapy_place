@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import CTAButton from "./CTAButton";
+import BookSessionModal from "@/app/Modals/BookSessionModal";
 
 const Mobilenav = () => {
     const [showMobileNav, setShowMobileNav] = useState(false);
@@ -82,10 +82,7 @@ const Mobilenav = () => {
                     </div>
 
                     {/* session button  */}
-                    <CTAButton
-                        text="book a session"
-                        href="/"
-                    />
+                    <BookSessionModal />
                 </div>
             </div>
         </section>

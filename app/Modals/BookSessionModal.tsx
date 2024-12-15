@@ -38,12 +38,13 @@ const BookSessionModal = () => {
 
             {/* Modal */}
             {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+                <div className="fixed w-full h-screen inset-0 z-50 flex flex-col items-center justify-center bg-black/50 backdrop-blur-sm">
                     <div className="bg-white rounded-lg shadow-lg w-[90%] max-w-lg p-8 relative animate-fadeIn">
                         {/* Close Button */}
-                        <CgClose  onClick={() => setIsOpen(false)}
-                            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 focus:outline-none"/>
-                       
+                        <CgClose
+                            onClick={() => setIsOpen(false)}
+                            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 focus:outline-none cursor-pointer" />
+
 
                         {/* Modal Heading */}
                         <h2 className="text-2xl font-bold text-gray-800 text-center">
