@@ -63,37 +63,37 @@ const About = () => {
                             title: "Personalized Care",
                             description:
                                 "We tailor every session to meet the unique needs and goals of our clients.",
-                            icon: "",
+                            icon: "/images/personalized.png",
                         },
                         {
                             title: "Compassionate Support",
                             description:
                                 "Empathy and understanding are at the heart of every interaction.",
-                            icon: "", 
+                            icon: "/images/emotional.png", 
                         },
                         {
                             title: "Evidence-Based Practices",
                             description:
                                 "We use proven techniques to ensure effective and lasting outcomes.",
-                            icon: "", 
+                            icon: "/images/evidence.png", 
                         },
                         {
                             title: "Holistic Approach",
                             description:
                                 "We focus on the mind, body, and soul to promote comprehensive healing.",
-                            icon: "", 
+                            icon: "/images/holistic-approach.png", 
                         },
                         {
                             title: "Inclusivity",
                             description:
                                 "We create a safe space for everyone, regardless of background or identity.",
-                            icon: "", 
+                            icon: "/images/team.png", 
                         },
                         {
                             title: "Accessibility",
                             description:
                                 "Our telehealth options make therapy convenient and flexible for all.",
-                            icon: "",
+                            icon: "/images/accesibility.png",
                         },
                     ].map((value, index) => (
                         <div

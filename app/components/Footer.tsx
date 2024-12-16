@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -111,7 +112,7 @@ const Footer = () => {
                 <div className="mt-6 flex flex-col lg:flex-row items-center justify-between text-sm">
                     <p className="text-gray-400">&copy; {new Date().getFullYear()} Serapy Place. All rights reserved.</p>
                     <p className="mt-4 lg:mt-0">
-                        Designed with <span className="text-emerald-400">&hearts;</span> by CraftDuka Digital
+                        Designed with <span className="text-emerald-400">&hearts;</span> by <Link href={"https://craftduka.com/"}>CraftDuka Digital</Link>
                     </p>
                 </div>
             </div>

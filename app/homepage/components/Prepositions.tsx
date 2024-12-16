@@ -42,7 +42,7 @@ const WhyUs = () => {
                 {reasons.map((reason, index) => (
                     <div
                         key={index}
-                        className="group bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center"
+                        className="group cursor-pointer bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center"
                     >
                        
                         {/* Reason Title */}

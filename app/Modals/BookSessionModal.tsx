@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowBigRight } from "lucide-react";
 import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 
@@ -22,7 +23,7 @@ const BookSessionModal = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log(formData);
-        // Add form submission logic (e.g., API call)
+        // form submission logic (e.g., API call)
         setIsOpen(false); // Close modal after submission
     };
 
@@ -31,9 +32,10 @@ const BookSessionModal = () => {
             {/* Button to open the modal */}
             <button
                 onClick={() => setIsOpen(true)}
-                className="px-6 py-2 bg-emerald-500 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-emerald-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                className="px-6 flex items-center group py-2 bg-emerald-500 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-emerald-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
             >
-                book a session
+                <span>book a session </span>
+                <ArrowBigRight className="group-hover:translate-x-1 ease-linear duration-300"/>
             </button>
 
             {/* Modal */}
