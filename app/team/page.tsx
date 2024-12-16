@@ -8,25 +8,25 @@ const teamMembers = [
         name: "Dr. Emily Carter",
         role: "Clinical Psychologist",
         bio: "Dr. Carter specializes in cognitive-behavioral therapy and has over 10 years of experience helping clients overcome anxiety and depression.",
-        image: "/images/dr-emily-carter.jpg", 
+        image: "/images/psychologist.png", 
     },
     {
         name: "Mr. James O'Neill",
         role: "Licensed Psychotherapist",
         bio: "James is passionate about guiding individuals through trauma recovery and fostering personal growth.",
-        image: "/images/james-oneill.jpg", 
+        image: "/images/psychologist (1).png", 
     },
     {
         name: "Ms. Sophia Harris",
         role: "Family Therapist",
         bio: "Sophia works closely with families to improve communication and build stronger, healthier relationships.",
-        image: "/images/sophia-harris.jpg", 
+        image: "/images/psychologist.png", 
     },
     {
         name: "Dr. Rachel Nguyen",
         role: "Child and Adolescent Therapist",
         bio: "Rachel is dedicated to helping children and teens navigate life’s challenges with compassion and care.",
-        image: "/images/rachel-nguyen.jpg", 
+        image: "/images/psychologist.png", 
     },
 ];
 
@@ -54,7 +54,7 @@ const OurTeam = () => {
                                 alt={`${member.name} photo`}
                                 width={300}
                                 height={300}
-                                className="w-full h-48 object-cover"
+                                className="w-full h-64 object-cover"
                             />
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
