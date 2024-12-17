@@ -2,7 +2,7 @@
 
 const OurMission = () => {
     return (
-        <section className="py-16 px-6 lg:px-16 bg-emerald-50">
+        <section className="py-24 px-6 lg:px-16 bg-emerald-50">
             <div className="max-w-7xl mx-auto text-center">
                 <h2 className="text-4xl font-extrabold text-gray-800 lg:text-5xl">
                     Our Mission
