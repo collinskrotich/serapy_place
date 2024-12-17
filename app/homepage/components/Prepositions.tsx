@@ -26,7 +26,7 @@ const WhyUs = () => {
     ];
 
     return (
-        <section className="py-12 px-4 md:px-8 lg:px-16 bg-gray-50">
+        <section className="py-24 px-4 md:px-8 lg:px-16 bg-gray-50">
             <div className="max-w-7xl mx-auto text-center">
                 {/* Section Heading */}
                 <h2 className="text-3xl font-extrabold text-gray-800 lg:text-4xl">

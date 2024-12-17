@@ -17,10 +17,6 @@ export const metadata: Metadata = {
     "mental health",
     "serapy place",
   ],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
   robots: {
     index: true,
     follow: true,
@@ -39,7 +35,7 @@ export const metadata: Metadata = {
     description: "Explore a compassionate space dedicated to your mental health, growth, and healing journey.",
     images: [
       {
-        url: "/logo.png", 
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Serapy Place - Growth, Healing, and Self-Discovery",
@@ -48,10 +44,18 @@ export const metadata: Metadata = {
     siteName: "Serapy Place",
     locale: "en_US",
   },
-  themeColor: "#ffffff", 
+  metadataBase: new URL("https://serapy-place.vercel.app/"),
   icons: {
-    icon: "/favicon.ico", 
-    apple: "/apple-touch-icon.png",
+    icon: {
+      url: "/logo.png",
+      type: "image/x-icon",
+      sizes: "180x180",
+    },
+    apple: {
+      url: "/logo.png",
+      type: "image/png",
+      sizes: "180x180",
+    }
   },
 };
 

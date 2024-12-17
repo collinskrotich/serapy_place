@@ -10,7 +10,7 @@ const services = [
         description: `Understanding the need for flexible and accessible mental health care, Serapy Place offers secure and confidential telehealth sessions. With the convenience of receiving therapy from home or any private space, our virtual sessions ensure that you have the support you need, whenever you need it.`,
         buttonText: "Book Now",
         link: "/book-session",
-        image: "/images/telehealth.png",
+        image: "/images/telehealth-session.jpg",
     },
     {
         title: "Individual Psychotherapy",
@@ -19,21 +19,21 @@ const services = [
         With a compassionate and understanding approach, our therapists work closely with you to explore underlying issues, develop coping strategies, and foster resilience.`,
         buttonText: "Book Now",
         link: "/book-session",
-        image: "/images/psychology.png",
+        image: "/images/individual-therapy.jpg",
     },
     {
         title: "Group Therapy",
         description: `We provide a variety of therapeutic groups. These groups offer a safe and supportive environment for individuals to share experiences, learn from others, and develop new skills.`,
         buttonText: "Book Now",
         link: "/book-session",
-        image: "/images/grouptherapy.png",
+        image: "/images/group-therapy.jpg",
     },
     {
         title: "Couples Therapy",
         description: `Couples Therapy creates a secure environment where partners can freely express themselves, strengthen bonds, and resolve conflicts effectively.`,
         buttonText: "Book Now",
         link: "/book-session",
-        image: "/images/couple-therapy.png",
+        image: "/images/couple-therapy.jpg",
     },
 ];
 

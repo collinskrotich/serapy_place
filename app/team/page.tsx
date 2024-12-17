@@ -8,32 +8,32 @@ const teamMembers = [
         name: "Dr. Emily Carter",
         role: "Clinical Psychologist",
         bio: "Dr. Carter specializes in cognitive-behavioral therapy and has over 10 years of experience helping clients overcome anxiety and depression.",
-        image: "/images/psychologist.png", 
+        image: "/images/therapist.png", 
     },
     {
         name: "Mr. James O'Neill",
         role: "Licensed Psychotherapist",
         bio: "James is passionate about guiding individuals through trauma recovery and fostering personal growth.",
-        image: "/images/psychologist (1).png", 
+        image: "/images/profile.png", 
     },
     {
         name: "Ms. Sophia Harris",
         role: "Family Therapist",
         bio: "Sophia works closely with families to improve communication and build stronger, healthier relationships.",
-        image: "/images/psychologist.png", 
+        image: "/images/therapist.png", 
     },
     {
         name: "Dr. Rachel Nguyen",
         role: "Child and Adolescent Therapist",
         bio: "Rachel is dedicated to helping children and teens navigate life’s challenges with compassion and care.",
-        image: "/images/psychologist.png", 
+        image: "/images/therapist.png", 
     },
 ];
 
 const OurTeam = () => {
     return (
         <>
-            <section className="py-12 px-6 lg:px-16 bg-gray-50">
+            <section className="py-24 px-6 lg:px-16 bg-gray-50">
                 <div className="text-center max-w-4xl mx-auto mb-12">
                     <h2 className="text-4xl font-extrabold text-gray-800 lg:text-5xl">
                         Meet Our Team
@@ -52,9 +52,9 @@ const OurTeam = () => {
                             <Image
                                 src={member.image}
                                 alt={`${member.name} photo`}
-                                width={300}
-                                height={300}
-                                className="w-full h-64 object-cover"
+                                width={250}
+                                height={250}
+                                className="object-cover justify-self-center"
                             />
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>

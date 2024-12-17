@@ -9,24 +9,24 @@ const Services = () => {
             title: "Telehealth Sessions",
             description:
                 "Our telehealth services make it easier for you to maintain consistency in therapy, regardless of your schedule or location.",
-            image: "/images/telehealth.png", // Replace with your actual image paths
+            image: "/images/telehealth-session.jpg",
         },
         {
             title: "Individual Psychotherapy",
             description:
                 "Our core mission is to offer individualized psychotherapy sessions that cater to the unique needs of each client.",
-            image: "/images/psychology.png", // Replace with your actual image paths
+            image: "/images/individual-therapy.jpg", 
         },
         {
             title: "Group Sessions",
             description:
                 "Group therapy can be an effective way to address specific issues, while also building a sense of community and belonging.",
-            image: "/images/grouptherapy.png", // Replace with your actual image paths
+            image: "/images/group-therapy.jpg",
         },
     ];
 
     return (
-        <section className="py-12 px-4 md:px-8 lg:px-16 bg-gray-50">
+        <section className="py-24 px-4 md:px-8 lg:px-16 bg-gray-50">
             <div className="max-w-7xl mx-auto text-center">
                 {/* Section Heading */}
                 <h2 className="text-4xl font-extrabold text-gray-800 lg:text-5xl">

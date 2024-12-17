@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Health = () => {
     return (
-        <section className="flex flex-col items-center justify-center mx-auto py-12 px-4 md:px-8 lg:px-16">
+        <section className="flex flex-col items-center justify-center mx-auto py-24 px-4 md:px-8 lg:px-16">
             <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 max-w-7xl">
                 {/* Text Content */}
                 <div className="flex flex-col items-start gap-6 text-left md:w-1/2">
