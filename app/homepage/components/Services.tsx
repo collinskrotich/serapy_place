@@ -15,7 +15,7 @@ const Services = () => {
             title: "Individual Psychotherapy",
             description:
                 "Our core mission is to offer individualized psychotherapy sessions that cater to the unique needs of each client.",
-            image: "/images/individual-therapy.jpg", 
+            image: "/images/individual-therapy.jpg",
         },
         {
             title: "Group Sessions",
@@ -49,7 +49,13 @@ const Services = () => {
                                 src={service.image}
                                 alt={`${service.title} image`}
                                 fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="object-cover transition-all opacity-0 duration-700 group-hover:scale-105"
+                                onLoad={(event) => {
+                                    const image = event.target as HTMLImageElement; 
+                                    if (image && image.classList) {
+                                        image.classList.remove("opacity-0");
+                                    }
+                                }}
                             />
                         </div>
 

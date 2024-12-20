@@ -44,7 +44,13 @@ const About = () => {
                         src="/images/about.png" 
                         alt="About Serapy Place"
                         fill
-                        className="object-cover"
+                        className="object-cover transition-opacity opacity-0 duration-700"
+                        onLoad={(event) => {
+                            const image = event.target as HTMLImageElement; 
+                            if (image && image.classList) {
+                                image.classList.remove("opacity-0");
+                            }
+                        }}
                     />
                 </div>
             </div>
@@ -105,7 +111,13 @@ const About = () => {
                                     src={value.icon}
                                     alt={value.title}
                                     fill
-                                    className="object-contain"
+                                    className="object-contain transition-opacity opacity-0 duration-700"
+                                    onLoad={(event) => {
+                                        const image = event.target as HTMLImageElement; 
+                                        if (image && image.classList) {
+                                            image.classList.remove("opacity-0");
+                                        }
+                                    }}
                                 />
                             </div>
                             <h3 className="text-xl font-semibold text-gray-800">

@@ -38,7 +38,13 @@ const BookSessionPage = () => {
                         src="/images/book-session.jpg" 
                         alt="Therapy Session"
                         layout="fill"
-                        className="object-cover scale-105 hover:scale-100 transition-transform duration-500"
+                        className="object-cover scale-105 hover:scale-100 transition-all duration-700 opacity-0"
+                        onLoad={(event) => {
+                            const image = event.target as HTMLImageElement; 
+                            if (image && image.classList) {
+                                image.classList.remove("opacity-0");
+                            }
+                        }}
                     />
                 </div>
             </div>

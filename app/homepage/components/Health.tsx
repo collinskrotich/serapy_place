@@ -25,8 +25,14 @@ const Health = () => {
                         src="/images/health.png"
                         alt="Mental health illustration"
                         fill
-                        className="object-cover"
+                        className="object-cover transition-opacity opacity-0 duration-1000"
                         priority
+                        onLoad={(event) => {
+                            const image = event.target as HTMLImageElement; 
+                            if (image && image.classList) {
+                                image.classList.remove("opacity-0");
+                            }
+                        }}
                     />
                 </div>
             </div>

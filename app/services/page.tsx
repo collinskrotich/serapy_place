@@ -64,7 +64,13 @@ const ServicesPage = () => {
                                     src={service.image}
                                     alt={service.title}
                                     fill
-                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-all opacity-0 duration-700"
+                                    onLoad={(event) => {
+                                        const image = event.target as HTMLImageElement; 
+                                        if (image && image.classList) {
+                                            image.classList.remove("opacity-0");
+                                        }
+                                    }}
                                 />
                             </div>
 
