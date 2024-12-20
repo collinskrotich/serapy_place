@@ -19,21 +19,21 @@ const Contact = () => {
                 <div className="bg-white p-6 cursor-pointer rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
                     <Mail className="text-emerald-500 w-12 h-12 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold text-gray-800">Email Us</h3>
-                    <p className="mt-2 text-gray-600">info@serapyplace.com</p>
+                    <p className="mt-2 text-gray-600">help@serapy.co.ke</p>
                 </div>
 
                 {/* Contact Item: Phone */}
                 <div className="bg-white p-6 cursor-pointer rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
                     <Phone className="text-emerald-500 w-12 h-12 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold text-gray-800">Call Us</h3>
-                    <p className="mt-2 text-gray-600">+123 456 7890</p>
+                    <p className="mt-2 text-gray-600">020 200 4444</p>
                 </div>
 
                 {/* Contact Item: Location */}
                 <div className="bg-white p-6 cursor-pointer rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
                     <MapPin className="text-emerald-500 w-12 h-12 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold text-gray-800">Visit Us</h3>
-                    <p className="mt-2 text-gray-600">123 Wellness Lane, Mind City</p>
+                    <p className="mt-2 text-gray-600">Fair Acres, Lang&apos;ata Road</p>
                 </div>
             </div>
 
