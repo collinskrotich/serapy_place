@@ -21,36 +21,36 @@ const Footer = () => {
                         <h3 className="text-lg font-semibold text-emerald-400 mb-4">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
-                                <a
-                                    href="/about"
+                                <Link
+                                    href={"/about"}
                                     className="hover:text-emerald-400 transition-colors duration-300"
                                 >
                                     About Us
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="/services"
+                                <Link
+                                    href={"/services"}
                                     className="hover:text-emerald-400 transition-colors duration-300"
                                 >
                                     Our Services
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="/contact"
+                                <Link
+                                    href={"/contact"}
                                     className="hover:text-emerald-400 transition-colors duration-300"
                                 >
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="/privacy"
+                                <Link
+                                    href={"/"}
                                     className="hover:text-emerald-400 transition-colors duration-300"
                                 >
                                     Privacy Policy
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -59,9 +59,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold text-emerald-400 mb-4">Contact Us</h3>
                         <ul className="space-y-2 text-sm">
-                            <li>Phone: <a href="tel:+1234567890" className="hover:text-emerald-400">+1 (234) 567-890</a></li>
-                            <li>Email: <a href="mailto:info@serapyplace.com" className="hover:text-emerald-400">info@serapyplace.com</a></li>
-                            <li>Address: 123 Wellness Way, Harmony City</li>
+                            <li>Phone: <a href="tel:+1234567890" className="hover:text-emerald-400">020 200 4444</a></li>
+                            <li>Email: <a href="mailto:info@serapyplace.com" className="hover:text-emerald-400">help@serapy.co.ke</a></li>
+                            <li>Address: Fair Acres, Lang&apos;ata Road</li>
                         </ul>
                     </div>
 

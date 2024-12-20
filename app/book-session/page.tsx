@@ -35,7 +35,7 @@ const BookSessionPage = () => {
                 {/* Image */}
                 <div className="relative w-full lg:w-1/2 h-80 lg:h-[500px] overflow-hidden rounded-xl shadow-lg">
                     <Image
-                        src="/images/book-session.jpg" // Replace with your image path
+                        src="/images/book-session.jpg" 
                         alt="Therapy Session"
                         layout="fill"
                         className="object-cover scale-105 hover:scale-100 transition-transform duration-500"
